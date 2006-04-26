@@ -23,6 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Mount bar.
 
+%description -l pl
+Pasek montowania.
+
 %prep
 %setup -q -n %{_module_name}
 sed -e 's|datadir=.*|datadir="`enlightenment-config --module-dir`/${PACKAGE}"|' \
